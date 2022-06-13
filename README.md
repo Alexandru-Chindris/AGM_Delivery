@@ -57,3 +57,9 @@ Strumenti / tecnologie a disposizione:
   - Java
   - Spring / MVC / Thymeleaf / Javascript / CSS
   - MySQL/ MariaDB
+  
+  
+  #Pianificazione
+![IMG-20220613-WA0076](https://user-images.githubusercontent.com/89776299/173372184-3564ff2d-0f75-4bbb-93d0-a33aea5f02e0.jpg)
+![IMG-20220613-WA0074](https://user-images.githubusercontent.com/89776299/173372199-3595a728-8fca-4c1a-b604-e8bcd64bbbb6.jpg)
+![IMG-20220613-WA0075](https://user-images.githubusercontent.com/89776299/173372208-be657a5f-ce62-4128-b3e0-a222947108ff.jpg)
