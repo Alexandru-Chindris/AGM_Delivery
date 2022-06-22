@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="chindris alexandru ioan" />
+    <meta name="keywords" content="AGM_Express, Express, AGM_Delivery" />
+    <meta name="description" content="AGM Express web application" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <title>AGM Express</title>
+    <style>
+        :root{
+            background-color: #f8f9fa;
+        }
+
+        /* properties for Dashboard */
+        .cus_block {
+            background-color: white;
+            border-radius: 5px;
+            margin: 20px;
+        }
+
+        .cus_d_title{
+            font-weight: bolder;
+            font-size: large;
+            font-family: Arial;
+        }
+
+        cus_d_subtitle{
+            font-size: small;
+        }
+
+        .material-icons.md-18 {
+            font-size: 18px;
+        }
+
+        #left{
+            float:left;
+            position: absolute;
+        }
+
+        #right {
+            float: left;
+            margin-left: 146px;
+            width: 100%;
+            left: 100%;
+        }
+
+        .cus_space{
+            margin: 20px;
+        }
+
+        .cus_button{
+            width: 130px;
+            padding: 10px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .cus_hover:hover{
+            cursor:pointer;
+            box-shadow: 4px 3px 3px black;
+        }
+    </style>
+    <script>
+        function Dashboard(){
+            console.log("message from dashboard");
+            let flag = 1 ;
+            let div = document.getElementById("right");
+            let title = document.createElement("div");
+            let subtitle = document.createElement("div");
+            let block_1 = document.createElement("span");
+            let block_2 = document.createElement("span");
+            let block_3 = document.createElement("span");
+
+            while(flag <= 1) {
+                title.innerHTML = "Dashboard";
+                title.classList.add("cus_d_title");
+                div.append(title);
+
+                subtitle.innerHTML=" Home/Dashboard";
+                subtitle.classList.add("cus_d_subtitle");
+                div.append(subtitle);
+
+                let ti_b1 = document.createElement("span");
+                let shopping_icon = document.createElement("span");
+                let br_1 = document.createElement("br");
+
+                block_1.classList.add("cus_block");
+                ti_b1.innerHTML="Spedizioni | Oggi";
+                shopping_icon.innerHTML="shopping_cart";
+                shopping_icon.classList.add("material-symbols-outlined");
+                block_1.append(ti_b1);
+                block_1.append(br_1);
+                block_1.append(shopping_icon);
+                div.append(block_1);
+
+
+
+
+                flag ++;
+            }
+        }
+
+        function Colli() {
+            console.log("message from Colli");
+            let div = document.getElementById("right");
+            let title = document.createElement("div");
+            let subtitle = document.createElement("div");
+            let table = document.createElement("table");
+            let table_head = document.createElement("th");
+            let table_td = document.createElement("td");
+            let table_tr = document.createElement("tr");
+
+        }
+
+        function Veicoli() {
+            console.log("message from Veicoli");
+            let div = document.getElementById("right");
+            let title = document.createElement("div");
+            let subtitle = document.createElement("div");
+            let table = document.createElement("table");
+            let table_head = document.createElement("th");
+            let table_td = document.createElement("td");
+            let table_tr = document.createElement("tr");
+        }
+
+        function Magazzini() {
+            console.log("message from Magazzini");
+            let div = document.getElementById("right");
+            let title = document.createElement("div");
+            let subtitle = document.createElement("div");
+            let table = document.createElement("table");
+            let table_head = document.createElement("th");
+            let table_td = document.createElement("td");
+            let table_tr = document.createElement("tr");
+        }
+    </script>
+</head>
+<body>
+<nav class="navbar-nav">
+    <div>
+        <nav class="navbar navbar-expand-lg bg-light  d-block p-2">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">AGM Express</a>
+                <span class="material-symbols-outlined">menu</span>
+                <span>&nbsp &nbsp &nbsp &nbsp </span>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+</nav>
+    <div id="left">
+        <div class="container">
+            <div class="row">
+                <div class="col align-self-start">
+                    <span class="cus_button cus_hover position-absolute" onclick="Dashboard()"><span class="material-icons material-symbols-outlined md-18">dataset</span>Dashboard</span><br>
+                    <div class="cus_space"></div>
+                    <span class="cus_button cus_hover position-absolute" onclick="Colli()"><span class="material-icons material-symbols-outlined md-18">dataset</span>Colli</span><br>
+                    <div class="cus_space"></div>
+                    <span class="cus_button cus_hover position-absolute" onclick="Veicoli()"><span class="material-icons material-symbols-outlined md-18">dataset</span>Veicoli</span><br>
+                    <div class="cus_space"></div>
+                    <span class="cus_button cus_hover position-absolute" onclick="Magazzini()"><span class="material-icons material-symbols-outlined md-18">dataset</span>Magazzini</span><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="right">
+        <!-- La continuzione della pagina procede attraverso la manipolazione del DOM con JavaScript-->
+    </div>
+</body>
+</html>
+
+
